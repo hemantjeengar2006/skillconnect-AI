@@ -1,0 +1,362 @@
+// SkillBridge AI - Database Seed File (Sections 28, 29, 30, 31, 32)
+
+export const seedDatabase = {
+  students: [
+    {
+      id: "std-101",
+      name: "Hemant Sharma",
+      email: "hemant.sharma@student.edu",
+      phone: "+91 98765 43210",
+      course: "B.Tech Computer Science & Engineering",
+      department: "CSE",
+      semester: 6,
+      rollNo: "CSE-2023-108",
+      college: "Apex Institute of Technology & Science",
+      cgpa: 8.6,
+      location: "Bangalore, Karnataka",
+      targetCareer: "Full Stack Developer",
+      readinessPercentage: 78,
+      summary: "Dedicated 6th semester Computer Science student passionate about full stack software engineering, reactive web applications, scalable APIs, and database design.",
+      github: "https://github.com/hemant-sharma-dev",
+      linkedin: "https://linkedin.com/in/hemant-sharma-tech",
+      
+      // Privacy Settings (Point 32)
+      profileVisibility: "Verified Companies", // 'Only Me' | 'College' | 'Verified Companies' | 'Public Portfolio'
+
+      // Verification Evidence (Points 8, 9, 29)
+      technicalSkills: [
+        { name: "Python", level: "Advanced", score: 82, verified: true, category: "Backend" },
+        { name: "SQL", level: "Advanced", score: 76, verified: true, category: "Database" },
+        { name: "HTML & CSS", level: "Advanced", score: 88, verified: true, category: "Frontend" },
+        { name: "JavaScript", level: "Intermediate", score: 70, verified: true, category: "Frontend" },
+        { name: "Git & GitHub", level: "Intermediate", score: 72, verified: true, category: "Tools" },
+        { name: "React.js", level: "Learning", score: 45, verified: false, category: "Frontend", status: "Learn (Skill Gap)" },
+        { name: "Node.js", level: "Intermediate", score: 50, verified: false, category: "Backend", status: "Improve (Skill Gap)" },
+        { name: "Docker", level: "Basic", score: 20, verified: false, category: "DevOps", status: "Learn (Skill Gap)" }
+      ],
+
+      skillGaps: [
+        { name: "React.js", action: "Learn", priority: "High", unlockJobs: 5 },
+        { name: "Node.js", action: "Improve", priority: "High", unlockJobs: 4 },
+        { name: "Docker", action: "Learn", priority: "Medium", unlockJobs: 3 }
+      ],
+
+      projects: [
+        {
+          id: "p1",
+          title: "Smart City Traffic Analytics",
+          description: "Real-time municipal telemetry dashboard tracking congestion patterns, bottleneck alarms, and predictive traffic load using Python, SQLite, and REST endpoints.",
+          tech: ["Python", "Flask", "SQLite", "JavaScript", "Leaflet.js"],
+          link: "https://github.com/hemant-sharma-dev/smart-traffic",
+          date: "Nov 2025"
+        },
+        {
+          id: "p2",
+          title: "Campus Resource Booking Portal",
+          description: "Web application managing college lab reservations, projector checkouts, and admin approval workflows with role-based authentication.",
+          tech: ["HTML5", "CSS3", "JavaScript", "Python API", "Authentication"],
+          link: "https://github.com/hemant-sharma-dev/campus-booking",
+          date: "Aug 2025"
+        }
+      ],
+
+      certifications: [
+        {
+          id: "c1",
+          title: "Python for Everybody & Automation Specialization",
+          issuer: "Coursera / University of Michigan",
+          year: "2025",
+          credentialId: "CERT-PY-88392"
+        },
+        {
+          id: "c2",
+          title: "Relational Database Design with SQL",
+          issuer: "Infosys Springboard",
+          year: "2025",
+          credentialId: "INF-SQL-5421"
+        }
+      ],
+
+      applications: [
+        {
+          id: "app-1",
+          internshipId: "int-101",
+          company: "TechCorp Solutions",
+          role: "Full Stack Developer Intern",
+          appliedDate: "2026-03-02",
+          status: "Shortlisted",
+          stageIndex: 2,
+          matchScore: 82,
+          stipend: "₹25,000 / month",
+          location: "Bangalore (Hybrid)",
+          type: "Internship"
+        },
+        {
+          id: "app-2",
+          internshipId: "int-103",
+          company: "CloudScale Systems",
+          role: "MERN Stack Web Trainee",
+          appliedDate: "2026-03-08",
+          status: "Under Review",
+          stageIndex: 1,
+          matchScore: 74,
+          stipend: "₹22,000 / month",
+          location: "Remote",
+          type: "Internship"
+        },
+        {
+          id: "app-3",
+          internshipId: "int-105",
+          company: "FinTech Pulse",
+          role: "Backend API Engineering Trainee",
+          appliedDate: "2026-03-12",
+          status: "Interview Scheduled",
+          stageIndex: 4,
+          matchScore: 88,
+          stipend: "₹28,000 / month",
+          location: "Hyderabad",
+          type: "Internship"
+        }
+      ],
+
+      feedbackReceived: [
+        {
+          company: "TechCorp Solutions",
+          reviewer: "Alok Nambiar (Senior Tech Lead)",
+          date: "2026-03-14",
+          technicalSkills: 4,
+          problemSolving: 4,
+          communication: 4,
+          teamwork: 5,
+          professionalism: 5,
+          comments: "Hemant demonstrated solid mastery over Core Python and SQL queries during the initial screening round. Needs to finish React and Django ORM projects to stand out."
+        }
+      ]
+    }
+  ],
+
+  colleges: [
+    {
+      id: "col-101",
+      institutionName: "Apex Institute of Technology & Science",
+      code: "AITS-BLR-1998",
+      deanTPO: "Dr. K. S. Ramanathan",
+      tpoEmail: "tpo@apexinstitute.edu.in",
+      location: "Electronic City, Bangalore",
+      
+      // Point 30 Metrics
+      totalStudentsMonitored: 2500,
+      activePartnerCompanies: 86,
+      totalInternshipsPlaced: 320,
+      activePlacementDrives: 42,
+
+      topSkillGapsCohort: [
+        { skill: "Cloud & Docker", gapPercentage: 62, level: 38, urgency: "High" },
+        { skill: "React.js", gapPercentage: 57, level: 43, urgency: "High" },
+        { skill: "AI / Machine Learning", gapPercentage: 49, level: 51, urgency: "Medium" },
+        { skill: "Docker & Kubernetes", gapPercentage: 68, level: 32, urgency: "High" },
+        { skill: "DevOps & CI/CD", gapPercentage: 65, level: 35, urgency: "High" }
+      ],
+
+      departmentStats: [
+        { dept: "BCA", studentsCount: 650, placedCount: 88, avgStipend: "₹24,500" },
+        { dept: "B.Tech CSE", studentsCount: 1200, placedCount: 210, avgStipend: "₹32,000" },
+        { dept: "MCA", studentsCount: 450, placedCount: 94, avgStipend: "₹28,000" },
+        { dept: "Data Science", studentsCount: 200, placedCount: 45, avgStipend: "₹35,000" }
+      ],
+
+      placementDrives: [
+        { id: "drv-1", company: "TechCorp Solutions", date: "2026-03-28", roles: ["Python Intern", "Full Stack Intern"], eligibility: "BCA / B.Tech > 7.0 CGPA", registeredStudents: 84, status: "Confirmed" },
+        { id: "drv-2", company: "CloudScale Systems", date: "2026-04-05", roles: ["Frontend React Intern"], eligibility: "All CS Branches > 6.5 CGPA", registeredStudents: 112, status: "Scheduling Tests" },
+        { id: "drv-3", company: "FinTech Pulse", date: "2026-04-12", roles: ["Backend API Trainee"], eligibility: "BCA / B.Tech CSE", registeredStudents: 76, status: "Shortlisting" },
+        { id: "drv-4", company: "NextGen AI Labs", date: "2026-04-22", roles: ["AI / Data Science Engineer"], eligibility: "Math / CS with Python score > 75%", registeredStudents: 49, status: "Announced" }
+      ]
+    }
+  ],
+
+  companies: [
+    {
+      id: "comp-101",
+      name: "TechCorp Solutions Pvt Ltd",
+      domain: "Cloud & Enterprise SaaS",
+      headquarters: "Tech Park, Outer Ring Road, Bangalore",
+      contactPerson: "Alok Nambiar (Senior Tech Lead)",
+      email: "recruitment@techcorpsolutions.com",
+      website: "https://techcorpsolutions.com",
+      verified: true,
+      
+      // Point 31 Metrics
+      activeJobCount: 8,
+      activeInternshipCount: 5,
+      totalApplicationsReceived: 640,
+      shortlistedCandidates: 75,
+
+      companyApplications: [
+        {
+          id: "app-1",
+          candidateId: "std-101",
+          name: "Hemant Sharma",
+          course: "B.Tech CSE (Sem 6)",
+          college: "Apex Institute of Technology & Science",
+          cgpa: 8.6,
+          role: "Full Stack Developer Intern",
+          appliedDate: "2026-03-02",
+          matchScore: 82,
+          matchedSkills: ["Python", "SQL", "Git", "HTML/CSS"],
+          missingSkills: ["React", "Django"],
+          assessmentScore: "84% (Verified via AI Interview)",
+          evidence: "Assessment + 2 Projects + 2 Certifications",
+          evidenceLevel: "Strong",
+          status: "Shortlisted",
+          hasFeedback: true
+        },
+        {
+          id: "app-201",
+          candidateId: "std-102",
+          name: "Priya Patel",
+          course: "B.Tech CSE (Sem 7)",
+          college: "Apex Institute of Technology",
+          cgpa: 9.1,
+          role: "Full Stack Developer Intern",
+          appliedDate: "2026-03-04",
+          matchScore: 94,
+          matchedSkills: ["React", "Node.js", "MongoDB", "Git"],
+          missingSkills: [],
+          assessmentScore: "92% (Verified)",
+          evidence: "Assessment + 3 Production Projects",
+          evidenceLevel: "Strong",
+          status: "Interview Scheduled",
+          hasFeedback: false
+        }
+      ]
+    }
+  ],
+
+  internships: [
+    {
+      id: "int-101",
+      company: "TechCorp Solutions",
+      companyLogo: "🏢",
+      role: "Full Stack Developer Intern",
+      category: "Full Stack Developer",
+      location: "Bangalore (Hybrid)",
+      mode: "Hybrid",
+      duration: "6 Months",
+      stipend: "₹25,000 / month",
+      postedDate: "2026-03-01",
+      deadline: "2026-04-15",
+      openings: 4,
+      requiredSkills: ["React", "Node.js", "Express", "MongoDB", "Git"],
+      preferredSkills: ["Docker", "TypeScript", "REST API"],
+      eligibility: "BCA / B.Tech CSE / MCA (3rd or 4th year / final year)",
+      description: "Join TechCorp's core SaaS engineering team building microservices and responsive web consoles with high pre-placement conversion.",
+      benefits: ["Pre-Placement Offer (PPO) based on performance", "Flexible hours", "Staff Engineer mentorship"]
+    },
+    {
+      id: "int-103",
+      company: "CloudScale Systems",
+      companyLogo: "☁️",
+      role: "MERN Stack Web Trainee",
+      category: "Full Stack Developer",
+      location: "Remote",
+      mode: "Remote",
+      duration: "3 Months",
+      stipend: "₹22,000 / month",
+      postedDate: "2026-03-05",
+      deadline: "2026-04-20",
+      openings: 3,
+      requiredSkills: ["JavaScript", "React", "Node.js", "REST API"],
+      preferredSkills: ["Tailwind CSS", "Redux"],
+      eligibility: "All Computer Science / IT disciplines",
+      description: "Collaborate with senior distributed systems architects to design responsive cloud dashboards.",
+      benefits: ["Remote stipend allowance", "AWS Certification sponsorship", "Hands-on CI/CD experience"]
+    },
+    {
+      id: "int-105",
+      company: "FinTech Pulse",
+      companyLogo: "💳",
+      role: "Backend API Engineering Trainee",
+      category: "Python Developer",
+      location: "Hyderabad",
+      mode: "In-office",
+      duration: "6 Months",
+      stipend: "₹28,000 / month",
+      postedDate: "2026-03-10",
+      deadline: "2026-04-30",
+      openings: 5,
+      requiredSkills: ["Python", "SQL", "PostgreSQL", "REST API"],
+      preferredSkills: ["FastAPI", "Docker", "Redis"],
+      eligibility: "BCA / B.Tech / MCA",
+      description: "Build financial payment routing services, audit logs, and optimized relational schemas.",
+      benefits: ["Health insurance coverage", "Full-time PPO package ₹8.5 LPA", "Daily campus transport"]
+    }
+  ],
+
+  // Real-Time Notifications (Point 18)
+  notifications: [
+    {
+      id: "notif-1",
+      recipientRole: "student",
+      recipientId: "std-101",
+      title: "New Matching Internship Requisition",
+      message: "TechCorp Solutions posted 'Full Stack Developer Intern' matching 82% of your verified profile.",
+      timestamp: "10 mins ago",
+      isRead: false,
+      type: "opportunity"
+    },
+    {
+      id: "notif-2",
+      recipientRole: "student",
+      recipientId: "std-101",
+      title: "Assessment Result Verified",
+      message: "Your AI Mock Technical Interview scored 84% and has been verified to your digital credentials.",
+      timestamp: "1 hour ago",
+      isRead: false,
+      type: "assessment"
+    },
+    {
+      id: "notif-3",
+      recipientRole: "college",
+      recipientId: "col-101",
+      title: "Cohort Skill Gap Alert",
+      message: "35 students in BCA completed the Cloud & Docker diagnostic test; 62% skill gap identified.",
+      timestamp: "2 hours ago",
+      isRead: false,
+      type: "alert"
+    },
+    {
+      id: "notif-4",
+      recipientRole: "company",
+      recipientId: "comp-101",
+      title: "New Verified Candidate Discovered",
+      message: "Hemant Sharma meets 4/5 required criteria for Full Stack Developer with Strong evidence.",
+      timestamp: "3 hours ago",
+      isRead: true,
+      type: "candidate"
+    }
+  ],
+
+  // Fraud / Fake Profile Detection (Point 24)
+  fraudDetections: [
+    {
+      id: "flag-1",
+      userId: "std-902",
+      userName: "Rohan K. (Flagged for Review)",
+      flagType: "Duplicate Experience & Unverified Certifications",
+      suspicionScore: "High (88%)",
+      details: "Certificate ID matches multiple external online profiles without cryptographic validation.",
+      status: "Admin Review Required",
+      actionTaken: "Consent Held - Profile Masked from Public Directory"
+    },
+    {
+      id: "flag-2",
+      userId: "std-841",
+      userName: "Test User 2026",
+      flagType: "Inconsistent Academic CGPA",
+      suspicionScore: "Moderate (65%)",
+      details: "Self-declared CGPA 9.9 deviates from institutional registrar sync by +2.4 points.",
+      status: "Awaiting TPO Verification",
+      actionTaken: "Under TPO Scrutiny"
+    }
+  ]
+};
